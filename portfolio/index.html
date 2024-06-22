@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emanuel Nakeng - Personal Portfolio</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            line-height: 0px
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #000;
+            margin: 0px;
+            line-height: 48px
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #000;
+            margin: 0px;
+            line-height: 34px
+        }
+
+        p {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 24px;
+            margin: 0px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+            height: 10%;
+        }
+
+        .navigation_menu {
+            list-style-type: none;
+            gap: 40px;
+        }
+
+        .navigation_socialIcons {
+            padding-right: 10px;
+
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        header {
+
+            background-color: #EDEDED;
+            height: 100vh;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+
+        }
+
+        li:hover {
+            opacity: 0.5;
+            transition: ease-in 100ms;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+
+        }
+
+        .hero_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+            gap: 10px;
+        }
+
+        .navigation_socialIcons :hover {
+            opacity: 0.5;
+        }
+
+        .myImage {
+            height: 115px;
+            width: 110px;
+            border-radius: 100px;
+            object-fit: fill;
+            border: 5px solid white;
+        }
+
+        #introduction {
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+        }
+        #projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+            height: 50vh;
+            gap: 40px
+        }
+        .projects_container {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .project {
+            width: 30.33%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation_menu">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="navigation_socialIcons">
+                <a href="#">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <img src="../assets/Social Icons.svg" alt="Github logo" width="24" height="24"
+                            class="navigation_socialIcons">
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <img src="../assets/Social Icons (1).svg" alt="x logo" width="24" height="24"
+                            class="navigation_socialIcons">
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <img src="../assets/Social Icons (2).svg" alt="Youtube logo" width="24" height="24"
+                            class="navigation_socialIcons">
+                    </svg>
+                </a>
+            </ul>
+        </nav>
+        <section class="hero_container">
+            <img src="../assets/image.png" alt="Headshot of Emanuel" class="myImage" />
+            <h1 style="text-align: center;">Emanuel Nakeng</h1>
+            <p>Building the Future, One Line at a Time</p>
+        </section>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>JS</h2>
+            <p style="text-align: center;">I'm a passionate software developer with a knack for creating efficient,
+                scalable, and user-friendly
+                applications. <br>I specialize in JavaScript, Reactjs, React Native, HTML5 and CSS3.
+                I have experience working with<br> various frameworks and technologies such as
+                React, Django, Node.js.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <section class="projects_container">
+                <article class="project">
+                    <h3>JS Calculator</h3>
+                    <p>As the world continues to embrace digital transformation, 5G technology is emerging as a
+                        game-changer, promising to revolutionize connectivity and beyond</p>
+                    <a href="#" target="_blank">Read more</a>
+                </article>
+                <article class="project">
+                    <h3>Chatbot</h3>
+                    <p>As the world continues to embrace digital transformation, 5G technology is emerging as a
+                        game-changer, promising to revolutionize connectivity and beyond</p>
+                    <a href="#" target="_blank">Read more</a>
+                </article>
+                <article class="project">
+                    <h3>Guess the Number Game</h3>
+                    <p>As the world continues to embrace digital transformation, 5G technology is emerging as a
+                        game-changer, promising to revolutionize connectivity and beyond</p>
+                    <a href="#" target="_blank">Read more</a>
+                </article>
+            </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <p style="text-align: center;">I am a professional developer with a passion for<br> building digital
+                    products, brands <br>and experiences.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <a href="mailto:your.email@example.com" target="_blank">Email me</a>         
+                <a href="https://github.com" target="_blank">Github</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </section>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
